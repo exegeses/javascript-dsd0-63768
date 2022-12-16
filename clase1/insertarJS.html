@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Insertar javascript en el HTML</h1>
+    <span id="txt"></span>
+    <script>
+        //comentario de 1 línea
+        //alert('ventana emergente');
+        document.write('Hola mundo desde Javascript');
+        document.write('<br>');
+        document.write( '887 * 778 = ' );
+        document.write( 887 * 778 );
+
+        /* escribimos dentro del span con el id "txt" */
+        document.getElementById('txt').innerText = 'Inner Text';
+    </script>
+
+</body>
+</html>

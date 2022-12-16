@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables en Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Variables en Javascript</h1>
+    <span id="txt"></span>
+    <script>
+        /* para declarar variables utilizamos
+            la palabra reservada "let" */
+        let numero = 9;
+        let frase = 'hola mundo';
+
+        /* para declarar constantes  utilizamos
+            la palabra reservada "const"  */
+        const nombre = 'marcos';
+
+        /* mostramos los valores en el documento */
+        document.write('<br>');
+        document.write( numero );
+        document.getElementById('txt').innerText = frase;
+
+        document.write('<br>');
+        //sobreescribimos el valor de numero
+        numero = 10;
+        document.write( numero );
+
+        //nombre = 'jhtf';
+        document.write( nombre );
+    </script>
+
+</body>
+</html>
