@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ámbito o acceso a variables</title>
+</head>
+<body>
+    <h1>Ámbito o acceso a variables</h1>
+
+    <script>
+        //declaramos una variabla fuera de las llaves
+        let externa = 20;
+        let externa2 = 5;
+
+        //declaramos una variable dentro de llaves
+        {
+            let variableInterna = 10;
+            document.write( variableInterna );
+            externa2 = 30;
+
+            // inconsistencia
+            fruta = 'pera';
+        }
+
+        // document.write( variableInterna ); no se puede porque está dentro de llaves
+        document.write( externa );
+        document.write( externa2 );
+
+        document.write( fruta );
+
+    </script>
+
+</body>
+</html>

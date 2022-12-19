@@ -9,6 +9,41 @@ const txt = document.getElementById('txt');
 //creamos un objeto de fecha
 let fecha = new Date();
 
+/*
+ día de la semana
+   getDay()
+  obtiene un número 
+  0 -> Domingo
+  1 -> Lunes
+  2 -> Martes
+  3 -> Miércoles
+ */
+let numDiaSemana = fecha.getDay();
+console.log( numDiaSemana );
+let diaSemana = '';
+if ( numDiaSemana == 0 ){
+    diaSemana = 'Domingo';
+}
+else if( numDiaSemana == 1 ){
+    diaSemana = 'Lunes';
+}
+else if( numDiaSemana == 2 ){
+    diaSemana = 'Martes';
+}
+else if( numDiaSemana == 3 ){
+    diaSemana = 'Miércoles';
+}
+else if( numDiaSemana == 4 ){
+    diaSemana = 'Jueves';
+}
+else if( numDiaSemana == 5 ){
+    diaSemana = 'Viernes';
+}
+else{
+    diaSemana = 'Sábado';
+}
+
+
 //obtenemos el número de día de mes
 let diaMes = fecha.getDate();
 
@@ -19,11 +54,11 @@ let mesActual = fecha.getMonth() + 1;
 let anio = fecha.getFullYear();
 
 //mostramos texto en el span (variante concatenación)
-txt.innerText = diaMes +'/'+ mesActual +'/'+ anio;
+//txt.innerText = 'Hoy es: '+ diaSemana +' '+ diaMes +'/'+ mesActual +'/'+ anio;
 
 //mostramos texto en el span (variante interpolación de variables)
-txt.innerText = `${diamess}/${mesActual}/${anio}` // backtick ` 
+/* también llamado template literals */
+txt.innerText = `Hoy es: ${diaSemana} ${diaMes}/${mesActual}/${anio}`;
 
-///  ${ nombreVariable }
 
-
+//  ${ nombreVariable }
