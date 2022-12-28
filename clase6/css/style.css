@@ -59,3 +59,21 @@ nav{
     padding: 12px;
     color: #fff;
 }
+
+ul{
+    width: 200px;
+    margin: 24px;
+}
+    li{
+        list-style-type: none;
+        border-left: 3px solid rgb(36, 50, 36);
+        padding: 4px 8px;
+        background-color: #d5eed5;
+        margin: 1px 0px;
+        transition: .3s;
+    }
+    li:hover{
+        background-color: #fff;
+        font-size: 20px;
+        color: rgb(56, 74, 63);
+    }
