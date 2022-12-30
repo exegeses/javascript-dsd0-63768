@@ -77,3 +77,29 @@ ul{
         font-size: 20px;
         color: rgb(56, 74, 63);
     }
+
+#contenedor{
+    width: 450px;
+    margin: 32px auto;
+    background-color:  #262d26;;   
+    padding: 32px;
+    border-radius: 12px;
+}
+    #campoNombre{
+        width: 100%;
+        background-color:  #e9f4e9;;   
+        border: none;
+        padding: 8px;
+        border-radius: 6px;
+    }
+    #contenedor button{
+        margin-top: 24px;
+        width: 100%;
+        background-color:  #f7cd64;  
+        border: none;
+        padding: 8px;
+        border-radius: 6px;
+    }
+    #msjError{
+        color: rgb(253, 120, 120);
+    }
